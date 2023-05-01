@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  event_auto:
+    image: event-auto:latest
+    build:
+      context: .
+      dockerfile: build/service/Dockerfile
+    container_name: event_auto
+    restart: unless-stopped
+    env_file: .env
+
+networks:
+  default:
+    name: sportiq
+    external: true
