@@ -58,7 +58,7 @@ COPY ./app .
 
 # Creates a non-root user with an explicit UID and adds permission to access the /marketplace folder
 # For more info, please refer to https://aka.ms/vscode-docker-python-configure-containers
-RUN adduser -u 5678 --disabled-password --gecos "" appuser && chown -R appuser /user_service
+RUN adduser -u 5678 --disabled-password --gecos "" appuser && chown -R appuser /auto
 USER appuser
 
 # Single handler for cluster node in future * NOW REDECLARED IN COMPOSE *
