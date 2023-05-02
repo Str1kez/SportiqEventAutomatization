@@ -11,6 +11,7 @@ python = "^3.11"
 psycopg2 = "^2.9.6"
 pydantic = {extras = ["dotenv"], version = "^1.10.7"}
 dramatiq = {extras = ["rabbitmq", "watch"], version = "^1.14.2"}
+apscheduler = "^3.10.1"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.3.0"

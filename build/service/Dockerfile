@@ -62,4 +62,4 @@ RUN adduser -u 5678 --disabled-password --gecos "" appuser && chown -R appuser /
 USER appuser
 
 # Single handler for cluster node in future * NOW REDECLARED IN COMPOSE *
-CMD ["dramatiq", "__main__", "-p", "3"]
+CMD ["python3", "__main__.py"]

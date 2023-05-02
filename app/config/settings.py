@@ -26,7 +26,8 @@ class DefaultSettings(BaseSettings):
     RABBITMQ_DEFAULT_USER: str = environ.get("RABBITMQ_DEFAULT_USER", "rmuser")
     RABBITMQ_DEFAULT_PASS: str = environ.get("RABBITMQ_DEFAULT_PASS", "rmpassword")
 
-    HANDICAP_HOURS: int = int(environ.get("HANDICAP_HOURS", 1))
+    HANDICAP_HOURS: int = int(environ.get("HANDICAP_HOURS", 6))
+    CRON_FREQUENCY_MINUTES: int = int(environ.get("CRON_FREQUENCY_MINUTES", 1))
 
     @property
     def database_settings(self) -> dict:
