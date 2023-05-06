@@ -35,7 +35,7 @@ def event_complete():
     rows = dbmanager.execute(sql_complete)
     if not rows:
         return
-    data_list = [{"event_id": id_, "event_title": title} for id_, title in rows]
+    data_list = [{"id": id_, "title": title} for id_, title in rows]
     mqmanager.publish_json("events", json.dumps({"events": data_list}), MQEventType.complete)
 
 
