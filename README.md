@@ -20,7 +20,7 @@ Automatization for time-based info. You can change the event deletion time in `.
    ```commandline
    make build
    ```
-3. Turn on Message Queue and Event DB services
+3. Turn on Message Queue and Event DB services, that are defined in the [Event Service](https://github.com/Str1kez/SportiqEventService)
 4. After that, start automatization:
    ```commandline
    make up
